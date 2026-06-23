@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Privacy Policy — PlugZen</title>
+  <style>
+    body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 2.5rem auto; padding: 0 1.25rem; color: #1a1a1a; line-height: 1.55; }
+    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
+    h2 { font-size: 1.1rem; margin-top: 2rem; }
+    p { margin: 0.6rem 0; }
+    .muted { color: #555; font-size: 0.9rem; }
+    ul { padding-left: 1.25rem; }
+    li { margin: 0.3rem 0; }
+    code { background: #f4f4f6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9em; }
+    </style>
+  </head>
+  <body>
+    <h1>Privacy Policy</h1>
+  <p class="muted">Applies to the PlugZen Chrome extension. Last updated: June 22, 2026.</p>p>
+  <h2>Short version</h2>
+  <p>PlugZen does not collect, store, transmit, or share any personal data. The extension runs entirely on your device. There are no accounts, no sign-in, no analytics, no advertising, no third-party trackers, and no network requests for normal operation.</p>
+  <h2>What data is collected</h2>
+  <p>None. PlugZen does not request or transmit any personal information.</p>
+  <h2>What is stored on your device</h2>
+  <p>PlugZen stores the following locally in Chrome's standard extension storage (and via Chrome Sync, when enabled, encrypted under your Google account):</p>
+  <ul>
+    <li>Profiles (named sets of extensions).</li>
+  <li>Schedules (rules that enable/disable extensions at chosen times).</li>
+  <li>Tags (colored labels you apply to extensions).</li>
+  <li>Locked-extension settings (extensions marked "always keep enabled").</li>
+  <li>Install-time snapshot used by the Restore feature.</li>
+  <li>Import/export JSON when you back up or move your configuration.</li>
+  <li>General preferences (theme, sort order, notification toggles).</li>
+  </ul>
+  <p>This data never leaves your device through PlugZen. Uninstalling the extension removes all locally stored PlugZen data.</p>
+  <h2>Permissions used</h2>
+  <ul>
+  <li><code>management</code> — list your installed extensions and enable/disable them. Core function.</li>
+  <li><code>storage</code>code> — stores profiles, schedules, tags, and settings on your device.</li>
+  <li><code>alarms</code> — fires scheduled rules in the background (MV3 requirement).</li>
+  <li><code>notifications</code> — informs you when a scheduled rule or bulk action runs.</li>
+  <li><code>contextMenus</code>code> — adds the right-click "Disable this page's extensions" action.</li>
+  </ul>
+  <p>PlugZen does not request host permissions and does not access any website's content, cookies, history, or browsing data.</p>
+  <h2>Children</h2>
+  <p>PlugZen is intended for a general audience. No personal information is collected from any user, including children.</p>
+  <h2>Third-party services</h2>
+  <p>None. No advertising SDKs, no analytics SDKs, no crash-reporting SDKs, no remote code, no third-party trackers. All code is bundled in the package you install from the Chrome Web Store.</p>
+  <h2>Sharing content</h2>
+  <p>Import/Export is local: PlugZen generates a JSON file and saves it to your device through Chrome's standard download mechanism. You choose where it goes. Nothing is uploaded to any server.</p>
+  <h2>Data security</h2>
+  <p>Because no data is transmitted, there is no data in transit to protect. On-device data is stored in Chrome's standard extension storage, sandboxed per extension by the browser.</p>
+  <h2>Your choices</h2>
+  <p>Clear all PlugZen data by uninstalling the extension from <code>chrome://extensions</code>. You can also disable specific permissions through Chrome's settings; some features will stop working if their underlying permission is revoked.</p>
+  <h2>Changes to this policy</h2>
+  <p>Updates will be published at this URL with a new "Last updated" date. Material changes will also be reflected in the extension's release notes on the Chrome Web Store.</p>
+  <h2>Contact</h2>
+  <p>Questions? Open an issue at <a href="https://github.com/svrohith9/plugzen-privacy/issues">github.com/svrohith9/plugzen-privacy/issues</a>a>.</p>
+  </body>
+</html>html></code></p></p></li></code></code></li></li></code></p></li></li>
+  </ul></p></p></h2></h1>
+  </body>
+  </style></title>
+  </head>
