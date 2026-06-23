@@ -1,65 +1,188 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Privacy Policy — PlugZen</title>
-  <style>
-    body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 2.5rem auto; padding: 0 1.25rem; color: #1a1a1a; line-height: 1.55; }
-    h1 { font-size: 1.75rem; margin-bottom: 0.25rem; }
-    h2 { font-size: 1.1rem; margin-top: 2rem; }
-    p { margin: 0.6rem 0; }
-    .muted { color: #555; font-size: 0.9rem; }
-    ul { padding-left: 1.25rem; }
-    li { margin: 0.3rem 0; }
-    code { background: #f4f4f6; padding: 0.1rem 0.3rem; border-radius: 3px; font-size: 0.9em; }
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PlugZen — Privacy Policy</title>
+    <meta
+      name="description"
+      content="PlugZen is a local-first, private Chrome extension manager. No servers, no analytics, no tracking. Read the full privacy policy."
+    />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>%F0%9F%94%8C</text></svg>" />
+    <style>
+      /* No remote fonts/assets — PlugZen makes zero network requests, and so does this page. */
+      :root {
+        --base: #0f0f13;
+        --surface: #16161e;
+        --card: #1e1e2e;
+        --line: rgba(255, 255, 255, 0.07);
+        --accent: #7c3aed;
+        --accent2: #8b5cf6;
+        --glow: #a78bfa;
+        --text: #e7e7ee;
+        --muted: rgba(231, 231, 238, 0.55);
+        color-scheme: dark;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        background:
+          radial-gradient(1100px 520px at 80% -10%, rgba(124, 58, 237, 0.18), transparent 60%),
+          var(--base);
+        color: var(--text);
+        font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+        line-height: 1.65;
+        -webkit-font-smoothing: antialiased;
+      }
+      .wrap { max-width: 760px; margin: 0 auto; padding: 56px 24px 80px; }
+
+      header { display: flex; align-items: center; gap: 14px; margin-bottom: 8px; }
+      .logo {
+        width: 48px; height: 48px; border-radius: 15px;
+        background: linear-gradient(135deg, var(--accent), var(--accent2));
+        display: grid; place-items: center; font-size: 24px;
+        box-shadow: 0 0 0 1px rgba(124, 58, 237, 0.5), 0 8px 28px rgba(124, 58, 237, 0.35);
+      }
+      header h1 { font-size: 26px; font-weight: 800; margin: 0; letter-spacing: -0.02em; }
+      header p { margin: 2px 0 0; color: var(--glow); font-size: 14px; font-weight: 500; }
+
+      .updated { color: var(--muted); font-size: 13px; margin: 18px 0 28px; }
+
+      .lede {
+        font-size: 18px; color: var(--text);
+        background: var(--surface); border: 1px solid var(--line);
+        border-radius: 18px; padding: 20px 22px; margin: 0 0 36px;
+      }
+      .lede strong { color: var(--glow); }
+
+      h2 {
+        font-size: 16px; font-weight: 700; text-transform: uppercase;
+        letter-spacing: 0.08em; color: var(--glow);
+        margin: 38px 0 14px; padding-bottom: 8px; border-bottom: 1px solid var(--line);
+      }
+      p { color: var(--muted); }
+      p.body { color: var(--text); }
+
+      ul { list-style: none; padding: 0; margin: 0; display: grid; gap: 10px; }
+      li {
+        background: var(--card); border: 1px solid var(--line); border-radius: 14px;
+        padding: 14px 16px; color: var(--text);
+      }
+      li b { color: #fff; }
+      li .sub { display: block; color: var(--muted); font-size: 14px; margin-top: 3px; }
+
+      .nots li {
+        border-color: rgba(52, 211, 153, 0.28);
+        background: rgba(52, 211, 153, 0.06);
+        display: flex; gap: 10px; align-items: flex-start;
+      }
+      .nots .x { color: #34d399; font-weight: 800; flex: none; }
+
+      table { width: 100%; border-collapse: collapse; font-size: 14px; }
+      th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+      th { color: var(--glow); font-weight: 600; white-space: nowrap; }
+      td code {
+        background: rgba(124, 58, 237, 0.16); color: var(--glow);
+        padding: 1px 7px; border-radius: 6px; font-size: 13px;
+      }
+
+      .contact {
+        margin-top: 40px; background: var(--surface); border: 1px solid var(--line);
+        border-radius: 18px; padding: 20px 22px;
+      }
+      .contact a { color: var(--glow); text-decoration: none; font-weight: 600; }
+      .contact a:hover { text-decoration: underline; }
+
+      footer { margin-top: 48px; color: var(--muted); font-size: 13px; text-align: center; }
+      footer a { color: var(--muted); }
     </style>
   </head>
   <body>
-    <h1>Privacy Policy</h1>
-  <p class="muted">Applies to the PlugZen Chrome extension. Last updated: June 22, 2026.</p>p>
-  <h2>Short version</h2>
-  <p>PlugZen does not collect, store, transmit, or share any personal data. The extension runs entirely on your device. There are no accounts, no sign-in, no analytics, no advertising, no third-party trackers, and no network requests for normal operation.</p>
-  <h2>What data is collected</h2>
-  <p>None. PlugZen does not request or transmit any personal information.</p>
-  <h2>What is stored on your device</h2>
-  <p>PlugZen stores the following locally in Chrome's standard extension storage (and via Chrome Sync, when enabled, encrypted under your Google account):</p>
-  <ul>
-    <li>Profiles (named sets of extensions).</li>
-  <li>Schedules (rules that enable/disable extensions at chosen times).</li>
-  <li>Tags (colored labels you apply to extensions).</li>
-  <li>Locked-extension settings (extensions marked "always keep enabled").</li>
-  <li>Install-time snapshot used by the Restore feature.</li>
-  <li>Import/export JSON when you back up or move your configuration.</li>
-  <li>General preferences (theme, sort order, notification toggles).</li>
-  </ul>
-  <p>This data never leaves your device through PlugZen. Uninstalling the extension removes all locally stored PlugZen data.</p>
-  <h2>Permissions used</h2>
-  <ul>
-  <li><code>management</code> — list your installed extensions and enable/disable them. Core function.</li>
-  <li><code>storage</code>code> — stores profiles, schedules, tags, and settings on your device.</li>
-  <li><code>alarms</code> — fires scheduled rules in the background (MV3 requirement).</li>
-  <li><code>notifications</code> — informs you when a scheduled rule or bulk action runs.</li>
-  <li><code>contextMenus</code>code> — adds the right-click "Disable this page's extensions" action.</li>
-  </ul>
-  <p>PlugZen does not request host permissions and does not access any website's content, cookies, history, or browsing data.</p>
-  <h2>Children</h2>
-  <p>PlugZen is intended for a general audience. No personal information is collected from any user, including children.</p>
-  <h2>Third-party services</h2>
-  <p>None. No advertising SDKs, no analytics SDKs, no crash-reporting SDKs, no remote code, no third-party trackers. All code is bundled in the package you install from the Chrome Web Store.</p>
-  <h2>Sharing content</h2>
-  <p>Import/Export is local: PlugZen generates a JSON file and saves it to your device through Chrome's standard download mechanism. You choose where it goes. Nothing is uploaded to any server.</p>
-  <h2>Data security</h2>
-  <p>Because no data is transmitted, there is no data in transit to protect. On-device data is stored in Chrome's standard extension storage, sandboxed per extension by the browser.</p>
-  <h2>Your choices</h2>
-  <p>Clear all PlugZen data by uninstalling the extension from <code>chrome://extensions</code>. You can also disable specific permissions through Chrome's settings; some features will stop working if their underlying permission is revoked.</p>
-  <h2>Changes to this policy</h2>
-  <p>Updates will be published at this URL with a new "Last updated" date. Material changes will also be reflected in the extension's release notes on the Chrome Web Store.</p>
-  <h2>Contact</h2>
-  <p>Questions? Open an issue at <a href="https://github.com/svrohith9/plugzen-privacy/issues">github.com/svrohith9/plugzen-privacy/issues</a>a>.</p>
+    <main class="wrap">
+      <header>
+        <div class="logo" aria-hidden="true">🔌</div>
+        <div>
+          <h1>PlugZen</h1>
+          <p>Privacy Policy</p>
+        </div>
+      </header>
+
+      <p class="updated">Last updated: 23 June 2026</p>
+
+      <p class="lede">
+        PlugZen is built to be <strong>local-first and private by design</strong>. It runs
+        entirely on your device, makes <strong>zero network requests</strong>, and has no
+        servers, accounts, analytics, or ads.
+      </p>
+
+      <h2>What PlugZen accesses</h2>
+      <ul>
+        <li>
+          <b>Your installed extensions</b>
+          <span class="sub">Via the <code>management</code> permission — names, icons, versions,
+          and enabled state — so PlugZen can list and toggle them.</span>
+        </li>
+      </ul>
+
+      <h2>What PlugZen stores</h2>
+      <ul>
+        <li>
+          <b>Profiles, schedules, tags &amp; settings</b>
+          <span class="sub">Stored in <code>chrome.storage.sync</code>, which Chrome may sync
+          across the devices you're signed into.</span>
+        </li>
+        <li>
+          <b>Install snapshot &amp; scheduler activity log</b>
+          <span class="sub">Stored in <code>chrome.storage.local</code> — on this device only,
+          never synced or transmitted.</span>
+        </li>
+      </ul>
+
+      <h2>What PlugZen does <em>not</em> do</h2>
+      <ul class="nots">
+        <li><span class="x">✓</span><span>Does <b>not</b> collect, transmit, sell, or share any personal data.</span></li>
+        <li><span class="x">✓</span><span>Does <b>not</b> contact any external server, analytics, or tracking service.</span></li>
+        <li><span class="x">✓</span><span>Does <b>not</b> read the content of the web pages you visit.</span></li>
+        <li><span class="x">✓</span><span>Has <b>no</b> accounts, <b>no</b> ads, and includes <b>no</b> remote code.</span></li>
+      </ul>
+
+      <h2>Permissions, explained</h2>
+      <table>
+        <thead>
+          <tr><th>Permission</th><th>Why it's needed</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>management</code></td><td>List your extensions and enable/disable them — the core function.</td></tr>
+          <tr><td><code>storage</code></td><td>Save your profiles, schedules, tags, and settings.</td></tr>
+          <tr><td><code>alarms</code></td><td>Fire scheduled enable/disable rules without a persistent background process.</td></tr>
+          <tr><td><code>notifications</code></td><td>Tell you when a scheduled rule or bulk action runs.</td></tr>
+          <tr><td><code>contextMenus</code></td><td>Add the right-click "disable this page's extensions" action.</td></tr>
+          <tr><td>Host permissions</td><td><b>None requested.</b> PlugZen has no access to any website.</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Your control over your data</h2>
+      <ul>
+        <li>
+          <b>Export anytime</b>
+          <span class="sub">Download your full configuration as a JSON file from Options → Import / Export.</span>
+        </li>
+        <li>
+          <b>Delete anytime</b>
+          <span class="sub">Remove the extension, or clear your profiles, schedules, and tags from the Options page.</span>
+        </li>
+      </ul>
+
+      <div class="contact">
+        <strong>Questions about privacy?</strong>
+        <p style="margin: 6px 0 0">Email <a href="mailto:svrohith9@gmail.com">svrohith9@gmail.com</a>.</p>
+      </div>
+
+      <footer>
+        PlugZen — Extension Manager &amp; Scheduler · Privacy questions:
+        <a href="mailto:svrohith9@gmail.com">svrohith9@gmail.com</a>
+      </footer>
+    </main>
   </body>
-</html>html></code></p></p></li></code></code></li></li></code></p></li></li>
-  </ul></p></p></h2></h1>
-  </body>
-  </style></title>
-  </head>
+</html>
